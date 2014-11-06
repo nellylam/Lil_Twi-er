@@ -7,11 +7,43 @@
   <link rel="stylesheet" href="assets/stylesheets/style.css" rel="stylesheet">
 </head>
 <body>
+  <h1>Lil' Twi'er</h1>
+  <hr>
+  <h2>Meet the Twi'er-ers!</h2>
+  <div id="container" >
 
+  <script id="home-template" type="text/template">
 
+    <form id="user-form">
+      <label>Name:
+        <input id="user-name-input" type="text" required>
+      </label>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+      <label>Username:
+        <input id="username-input" type="text" required>
+      </label>
+
+      <label>Tagline:
+        <input id="tagline-input" type="text" required>
+      </label>
+
+      <label>Avatar Url:
+        <input id="avatar_url-input" type="text" required>
+      </label>
+
+      <input type="submit">
+    </form>
+
+    <button id="fetch-user">fetch user</button>
+
+    <%= user.name %>
+  </script>
+
+  </div>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
